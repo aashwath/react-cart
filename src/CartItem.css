@@ -1,0 +1,27 @@
+.cart-item{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cart-item div{
+	width: 33.33%;
+	margin: 1.5rem 0;
+}
+
+.cart-item div:nth-child(1){
+	text-align: left;
+	font-weight: bold;
+}
+
+.cart-item div:nth-child(2){
+	text-align: center;
+}
+
+.cart-item div:nth-child(2) button{
+	margin: 10px;
+}
+
+.cart-item div:nth-child(3){
+text-align: right;
+}

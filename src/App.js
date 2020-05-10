@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import Counter from './Counter';
+import Cart from './Cart'
 import './App.css';
+
+const cartItems = [
+  {id: 1, name: 'Samsung Galaxy A51', price: 15000, qty: 1},
+  {id: 2, name: 'Gloves', price: 150, qty: 2},
+  {id: 3, name: 'Mask', price: 200, qty: 4}
+]
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Cart initialItems={cartItems}/>
+      {/* <Counter step={17}/> */}
     </div>
   );
 }
